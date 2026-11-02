@@ -7,3 +7,8 @@ Current To-Do
 - random player
 - simulations
 - dependency injection on board creation
+
+Future
+- add opening reference data and use adapter pattern to implement to game
+- same for endgame
+- do what we're doing for mancala for middle game
