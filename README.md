@@ -12,3 +12,4 @@ Future
 - add opening reference data and use adapter pattern to implement to game
 - same for endgame
 - do what we're doing for mancala for middle game
+- GUI
