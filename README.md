@@ -4,6 +4,7 @@ Independent Project
 Project structure
 - `pieces.py` contains the chess piece classes and movement rules.
 - `chess.py` contains the board/game logic and command-line game.
+- `bots.py` contains interchangeable bot move-selection strategies.
 - `gui.py` contains the simple Tkinter graphical interface.
 
 Run the graphical game from the project folder:
