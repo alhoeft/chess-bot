@@ -6,8 +6,8 @@ from pieces import Bishop, King, Knight, Pawn, Queen, Rook
 
 
 class ChessGUI:
-    LIGHT_SQUARE = "#f0d9b5"
-    DARK_SQUARE = "#b58863"
+    LIGHT_SQUARE = "#EBEBEB"
+    DARK_SQUARE = "#030027"
     SELECTED_SQUARE = "#f6f669"
     LEGAL_SQUARE = "#a9cf87"
     PIECE_SYMBOLS = {
@@ -66,7 +66,7 @@ class ChessGUI:
                 square.grid(row=display_row + 2, column=x + 1)
                 button = tk.Button(
                     square,
-                    font=("Arial", max(16, self.square_size // 2), "bold"),
+                    font=("DejaVu Sans Mono", max(16, self.square_size // 2), "bold"),
                     command=lambda x=x, y=y: self.on_square_click(x, y),
                     relief=tk.FLAT,
                     borderwidth=0,
@@ -96,7 +96,7 @@ class ChessGUI:
             else:
                 button.configure(
                     text=self.PIECE_SYMBOLS[(piece.color, type(piece))],
-                    fg="#222222",
+                    fg="#707070",
                 )
 
             background = self.LIGHT_SQUARE if (x + y) % 2 else self.DARK_SQUARE
